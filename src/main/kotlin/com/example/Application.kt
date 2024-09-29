@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.features.auth.configureAuthRouting
 import com.example.plugins.*
 import io.ktor.server.application.*
 
@@ -14,4 +15,5 @@ fun Application.module() {
     configureHTTP()
     configureSecurity()
     configureRouting()
+    configureAuthRouting()
 }
